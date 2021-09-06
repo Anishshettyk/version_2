@@ -5,6 +5,7 @@ const variables = css`
     --black: #050505;
     --white: #ffffff;
     --green: #00df9a;
+    --blue: #00adff;
 
     --font-roboto: "Roboto", sans-serif;
     --font-lato: "Lato", sans-serif;

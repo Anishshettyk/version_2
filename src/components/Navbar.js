@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { navLinks } from "../data"
 import { FiDownload } from "react-icons/fi"
 
-import Logo from "../components/Icons/logo.svg"
+import Logo from "../components/Icon/logo.svg"
 
 const StyledNavbar = styled.header`
   position: fixed;
@@ -23,14 +23,13 @@ const StyledNavbar = styled.header`
 const StyledLogo = styled(Link)`
   display: flex;
   align-items: center;
-  text-decoration: none;
   img {
-    width: 40px;
+    width: 50px;
   }
   span {
-    font-size: var(--fz-sm);
+    font-size: var(--fz-md);
     color: var(--white);
-    margin-left: 15px;
+    margin-left: 5px;
     border-left: 1px solid var(--white);
     padding-left: 4px;
     letter-spacing: 0.4px;
@@ -44,7 +43,7 @@ const StyledNavbarActions = styled.div`
     margin-left: 30px;
     background: var(--white);
     color: var(--black);
-    padding: 0.9em 1.8em;
+    padding: 0.8em 1.7em;
     border-radius: 4px;
     font-size: 16px;
     line-height: 1.125;
@@ -53,6 +52,9 @@ const StyledNavbarActions = styled.div`
     cursor: pointer;
     svg {
       margin-right: 10px;
+    }
+    &:hover {
+      opacity: 0.8;
     }
   }
 `
@@ -74,27 +76,6 @@ const NavbarLinks = styled.ul`
 `
 
 const Navbar = () => {
-  const [pageScrolled, setPageScrolled] = useState(0)
-
-  useEffect(() => {
-    const handleUserScroll = () => {
-      const isBrowser = typeof window !== "undefined"
-      if (isBrowser) {
-        var scrolledValue =
-          window.pageYOffset !== undefined
-            ? window.pageYOffset
-            : (
-                document.documentElement ||
-                document.body.parentNode ||
-                document.body
-              ).scrollTop
-        console.log(scrolledValue)
-      }
-    }
-    window.addEventListener("scroll", handleUserScroll)
-    return () => window.removeEventListener("scroll", handleUserScroll)
-  }, [])
-
   return (
     <StyledNavbar>
       <StyledLogo to="/">

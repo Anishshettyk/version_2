@@ -5,4 +5,36 @@ module.exports = {
     { id: 3, name: "Blogs", to: "/blogs" },
     { id: 4, name: "Contact", to: "/contact" },
   ],
+  socialLinksData: [
+    {
+      id: 1,
+      name: "Github",
+      color: "#333",
+      link: "https://github.com/Anishshettyk",
+    },
+    {
+      id: 2,
+      name: "Linkedin",
+      color: "#0a66c2",
+      link: "https://www.linkedin.com/in/anish-shetty-k-779a69195/",
+    },
+    {
+      id: 3,
+      name: "Twitter",
+      color: "#1da1f2",
+      link: "https://twitter.com/Anishshettyk11",
+    },
+    {
+      id: 4,
+      name: "Codepen",
+      color: "#010101",
+      link: "https://codepen.io/anishshettyk11",
+    },
+    {
+      id: 5,
+      name: "Instagram",
+      color: "#c32aa3",
+      link: "https://www.instagram.com/anish_shetty_11/",
+    },
+  ],
 }
