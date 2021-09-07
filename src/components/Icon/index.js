@@ -7,6 +7,8 @@ import {
   FiInstagram,
   FiMail,
 } from "react-icons/fi"
+import { FaReact, FaAws, FaGitAlt } from "react-icons/fa"
+import { SiFirebase, SiJavascript } from "react-icons/si"
 
 const Icon = ({ name }) => {
   switch (name) {
@@ -22,6 +24,17 @@ const Icon = ({ name }) => {
       return <FiLinkedin />
     case "Mail":
       return <FiMail />
+    case "React":
+      return <FaReact />
+    case "Firebase":
+      return <SiFirebase />
+    case "Javascript":
+      return <SiJavascript />
+    case "Aws":
+      return <FaAws />
+    case "Git":
+      return <FaGitAlt />
+
     default:
       return <p>please enter a valid icon name</p>
   }

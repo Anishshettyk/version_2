@@ -5,7 +5,7 @@ import { Icon } from "./index"
 
 const StyledSocialContainer = styled.div`
   position: fixed;
-  bottom: 20px;
+  bottom: 10px;
   left: 4px;
   width: 40px;
   z-index: 10;

@@ -12,6 +12,7 @@ const StyledNavbar = styled.header`
   left: 0;
   width: 100%;
   background-color: var(--black);
+  max-height: var(--navbar-height);
   display: flex;
   align-items: center;
   justify-content: space-between;

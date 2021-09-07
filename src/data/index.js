@@ -37,4 +37,11 @@ module.exports = {
       link: "https://www.instagram.com/anish_shetty_11/",
     },
   ],
+  heroLogos: [
+    { id: 1, name: "React", color: "#61DBFB" },
+    { id: 2, name: "Firebase", color: "#FFA611" },
+    { id: 3, name: "Aws", color: "#ff9900" },
+    { id: 4, name: "Javascript", color: "#f0db4f" },
+    { id: 5, name: "Git", color: "#f34f29" },
+  ],
 }

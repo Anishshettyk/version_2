@@ -40,6 +40,9 @@ const StyledMainContainer = styled.div`
       }
     }
   }
+  .content {
+    margin-top: var(--navbar-height);
+  }
 `
 
 const Layout = ({ children }) => {
@@ -54,7 +57,7 @@ const Layout = ({ children }) => {
             <div className="contact__icon">
               <Icon name="Mail" />
             </div>
-            {children}
+            <div className="content">{children}</div>
           </StyledMainContainer>
         </ThemeProvider>
       </div>
