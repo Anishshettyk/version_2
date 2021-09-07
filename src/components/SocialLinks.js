@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { socialLinksData } from "../data"
 import { Icon } from "./index"
+import { mixins } from "../styles"
 
 const StyledSocialContainer = styled.div`
   position: fixed;
@@ -11,10 +12,7 @@ const StyledSocialContainer = styled.div`
   z-index: 10;
 `
 const SocialLinksList = styled.ul`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  ${mixins.flex_column};
   li {
     margin: 10px 0px;
   }

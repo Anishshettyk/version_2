@@ -14,10 +14,8 @@ const StyledHero = styled.section`
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  display: flex;
+  ${mixins.flex_column};
   align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
 `
 const HeroContent = styled.div`
   margin-left: 80px;

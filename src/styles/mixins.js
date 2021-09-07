@@ -45,6 +45,10 @@ const mixin = {
     align-items: center;
     justify-content: flex-start;
   `,
+  flex_align: css`
+    display: flex;
+    align-items: center;
+  `,
   flex_center: css`
     display: flex;
     justify-content: center;

@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import { navLinks } from "../data"
 import { FiDownload } from "react-icons/fi"
+import { mixins } from "../styles"
 
 import Logo from "../components/Icon/logo.svg"
 
@@ -13,9 +14,7 @@ const StyledNavbar = styled.header`
   width: 100%;
   background-color: var(--black);
   max-height: var(--navbar-height);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  ${mixins.flex_between};
   z-index: 100;
   padding: 20px 90px;
   overflow: hidden;
@@ -38,8 +37,7 @@ const StyledLogo = styled(Link)`
   }
 `
 const StyledNavbarActions = styled.div`
-  display: flex;
-  align-items: center;
+  ${mixins.flex_align};
   .resume__button {
     margin-left: 30px;
     background: var(--white);
